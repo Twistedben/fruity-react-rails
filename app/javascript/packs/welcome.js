@@ -4,7 +4,7 @@ import Body from 'components/_body';
 
 const Welcome = (props) => {
   return (
-    <div>
+    <div className="center">
       <h1>Fruits!</h1>
       <Body />
     </div>
