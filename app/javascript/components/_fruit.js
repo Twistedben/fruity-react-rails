@@ -14,17 +14,11 @@ class Fruit extends React.Component {
 
   handleEdit(id) {
     if (this.state.editable) {
-      console.log(this);
-      console.log(this.name);
-      console.log(this.name.value);
       let name = this.name.value;
       let description = this.description.value;
       let fruit = { id: id, name: name, description: description };
       this.props.handleUpdate(fruit);
     }
-    console.log(this);
-    console.log(this.props.fruit.name);
-    console.log(this.props.fruit.description);
     this.setState({
       editable: !this.state.editable
     });
